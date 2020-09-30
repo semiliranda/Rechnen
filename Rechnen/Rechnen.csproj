@@ -60,6 +60,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Model\Zahlen.cs" />
+    <Compile Include="ViewModel\RechnenViewModel.cs" />
     <Compile Include="View\ViewRechnen.xaml.cs">
       <DependentUpon>ViewRechnen.xaml</DependentUpon>
     </Compile>
@@ -96,8 +97,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
