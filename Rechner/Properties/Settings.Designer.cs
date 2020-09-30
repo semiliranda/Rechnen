@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Rechner.Properties
+namespace Rechnen.Properties
 {
 
 
