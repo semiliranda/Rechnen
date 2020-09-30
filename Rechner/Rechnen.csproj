@@ -59,6 +59,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Model\Zahlen.cs" />
     <Compile Include="View\ViewRechnen.xaml.cs">
       <DependentUpon>ViewRechnen.xaml</DependentUpon>
     </Compile>
@@ -96,7 +97,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
