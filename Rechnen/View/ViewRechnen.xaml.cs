@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Rechnen.ViewModel;
 
 namespace Rechnen.View
 {
@@ -22,11 +23,18 @@ namespace Rechnen.View
         public ViewRechnen()
         {
             InitializeComponent();
+            // Binding to runtime, declare the Form 
+            this._rvm.Formular = this;
+            // important for binding of ViewModel with View
+            // property DataContext
+            this.DataContext = _rvm;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+        RechnenViewModel _rvm = new RechnenViewModel();
     }
 }
