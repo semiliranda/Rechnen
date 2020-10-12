@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Model\Zahlen.cs" />
     <Compile Include="ViewModel\RechnenViewModel.cs" />
+    <Compile Include="ViewModel\RelayCommand.cs" />
     <Compile Include="View\ViewRechnen.xaml.cs">
       <DependentUpon>ViewRechnen.xaml</DependentUpon>
     </Compile>
