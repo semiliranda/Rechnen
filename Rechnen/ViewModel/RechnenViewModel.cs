@@ -118,7 +118,7 @@ namespace Rechnen.ViewModel
         public ICommand ResetButtonCommand
         {
             get { return _resetButtonCommand; }
-            set { _subtraktionButtonCommand = value; }
+            set { _resetButtonCommand = value; }
         }
 
         // important for binding on runtime

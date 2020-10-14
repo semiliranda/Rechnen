@@ -15,7 +15,7 @@
             UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <TextBox x:Name="txtZahl2" TextAlignment="Right" HorizontalAlignment="Left" Height="23" Margin="290.657,154,0,0" TextWrapping="Wrap" Text="{Binding Path=Zahl2, Mode=TwoWay,
             UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120" Grid.Column="1" SelectionOpacity="4"/>
-        <TextBox x:Name="txtErgebnis" TextAlignment="Right" HorizontalAlignment="Left" Height="23" Margin="290.657,223,0,0" TextWrapping="Wrap" Text="{Binding Path=Ergebnis, Mode=OneWay,
+        <TextBox x:Name="txtErgebnis" TextAlignment="Right" HorizontalAlignment="Left" Height="23" Margin="290.657,223,0,0" TextWrapping="Wrap" Text="{Binding Path=ZahlErgebnis, Mode=OneWay,
             UpdateSourceTrigger=PropertyChanged}" Foreground="{Binding FarbeVordergrund}" FontWeight="Bold" FontSize="14.667" IsReadOnly="True" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Button x:Name="btnSub" Command="{Binding SubtraktionButtonCommand}" Content="Subtraktion" HorizontalAlignment="Left" Margin="106,292,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
         <Button x:Name="btnAdd" Command="{Binding AdditionButtonCommand}" Content="Addition" HorizontalAlignment="Left" Margin="290.657,292,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
