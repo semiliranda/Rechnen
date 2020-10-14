@@ -48,7 +48,7 @@ namespace Rechnen.ViewModel
         }
 
         private string _zahlErgebnis;
-        public string ZahlErgebins
+        public string ZahlErgebnis
         {
             get { return this._zahlErgebnis; }
             set
@@ -133,12 +133,12 @@ namespace Rechnen.ViewModel
                 this._z.Zahl1 = Convert.ToDecimal(Zahl1);
                 this._z.Zahl2 = Convert.ToDecimal(Zahl2);
                 // call method Add and convert the result into string
-                ZahlErgebins = this._z.Add().ToString();
+                ZahlErgebnis = this._z.Add().ToString();
                 Farbe();
             } catch (Exception ex)
             {
                 Fehler = "Fehler bei der Addition:" + Environment.NewLine + ex.Message;
-                ZahlErgebins = "Fehler!";
+                ZahlErgebnis = "Fehler!";
             }
         }
 
@@ -151,13 +151,13 @@ namespace Rechnen.ViewModel
                 this._z.Zahl1 = Convert.ToDecimal(Zahl1);
                 this._z.Zahl2 = Convert.ToDecimal(Zahl2);
                 // call method Sub and convert the result into string
-                ZahlErgebins = this._z.Sub().ToString();
+                ZahlErgebnis = this._z.Sub().ToString();
                 Farbe();
             }
             catch (Exception ex)
             {
                 Fehler = "Fehler bei der Subtraktion:" + Environment.NewLine + ex.Message;
-                ZahlErgebins = "Fehler!";
+                ZahlErgebnis = "Fehler!";
             }
         }
 
@@ -165,7 +165,7 @@ namespace Rechnen.ViewModel
         {
             Zahl1 = "0";
             Zahl2 = "0";
-            ZahlErgebins = "0";
+            ZahlErgebnis = "0";
             // Color to default
             FarbeVordergrund = Brushes.Black;
         }
