@@ -11,7 +11,7 @@ namespace Rechnen.Model
         public decimal? Zahl1 { get; set; }
         public decimal? Zahl2 { get; set; }
         // so liegt das Ergebnis später noch vor
-        public decimal? _zahlErg;
+        private decimal? _zahlErg;
         public decimal? ZahlErg
         {
             get { return this._zahlErg; }
